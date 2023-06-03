@@ -4,5 +4,6 @@
       <%= image_tag attendee.decorate.avatar, class: 'rounded-circle avatar-md' %>
       <%= attendee.name %>
     <% end %>
+    <%= render 'relationships/follow_btn', user: attendee %>
   </div>
 </li>

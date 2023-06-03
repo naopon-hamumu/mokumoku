@@ -9,6 +9,7 @@
       <div class="d-flex align-items-center mb-4 mb-lg-0">
         <%= image_tag @user.decorate.avatar, class: 'avatar-xl rounded-circle' %>
       </div>
+      <td><%= render 'relationships/follow_btn', user: @user %></td>
     </div>
     <hr class="my-5">
     <div>

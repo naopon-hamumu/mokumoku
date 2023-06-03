@@ -60,6 +60,7 @@
               <%= image_tag @event.user.decorate.avatar, class: 'rounded-circle avatar-lg' %>
               <%= @event.user.name %>
             <% end %>
+            <%= render 'relationships/follow_btn', user: @event.user %>
           </div>
           <div class="p-3 bg-light">
             イベント数
